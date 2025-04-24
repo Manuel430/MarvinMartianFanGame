@@ -4216,7 +4216,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_Idle
+      name: Marvin The Martian_Idle
       rect:
         serializedVersion: 2
         x: 7
@@ -4744,15 +4744,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_129
+      name: Marvin The Martian_Walk_01
       rect:
         serializedVersion: 2
-        x: 5
-        y: 478
-        width: 21
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 6
+        y: 479
+        width: 19
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.516129}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4766,13 +4766,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_130
+      name: Marvin The Martian_Walk_02
       rect:
         serializedVersion: 2
-        x: 29
-        y: 478
-        width: 21
-        height: 34
+        x: 30
+        y: 479
+        width: 19
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4788,15 +4788,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_131
+      name: Marvin The Martian_Walk_03
       rect:
         serializedVersion: 2
-        x: 52
-        y: 478
-        width: 22
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 53
+        y: 479
+        width: 20
+        height: 32
+      alignment: 9
+      pivot: {x: 0.475, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4810,15 +4810,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_132
+      name: Marvin The Martian_Walk_04
       rect:
         serializedVersion: 2
         x: 76
-        y: 478
-        width: 21
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        y: 479
+        width: 20
+        height: 31
+      alignment: 9
+      pivot: {x: 0.525, y: 0.516129}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4832,15 +4832,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_133
+      name: Marvin The Martian_Walk_05
       rect:
         serializedVersion: 2
-        x: 102
-        y: 478
-        width: 21
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 103
+        y: 479
+        width: 19
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.516129}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4854,13 +4854,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_134
+      name: Marvin The Martian_Walk_06
       rect:
         serializedVersion: 2
-        x: 126
-        y: 478
-        width: 21
-        height: 34
+        x: 127
+        y: 479
+        width: 19
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -4876,15 +4876,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_135
+      name: Marvin The Martian_Walk_07
       rect:
         serializedVersion: 2
-        x: 149
-        y: 478
-        width: 22
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 150
+        y: 479
+        width: 20
+        height: 32
+      alignment: 9
+      pivot: {x: 0.475, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4898,15 +4898,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_136
+      name: Marvin The Martian_Walk_08
       rect:
         serializedVersion: 2
-        x: 173
-        y: 478
-        width: 21
-        height: 33
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 174
+        y: 479
+        width: 19
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.516129}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -14646,15 +14646,7 @@ TextureImporter:
       Marvin The Martian Sprite_126: 3427269541085796606
       Marvin The Martian Sprite_127: -435271743222518925
       Marvin The Martian Sprite_128: 2277957735839040271
-      Marvin The Martian Sprite_129: -4840298146011515599
       Marvin The Martian Sprite_13: 1397857990924244648
-      Marvin The Martian Sprite_130: 7859323064155439529
-      Marvin The Martian Sprite_131: 3948956049498421626
-      Marvin The Martian Sprite_132: 5087029396017045116
-      Marvin The Martian Sprite_133: 4628198326527271067
-      Marvin The Martian Sprite_134: -4339439137272891879
-      Marvin The Martian Sprite_135: 1555222056162298631
-      Marvin The Martian Sprite_136: 8083014482184736568
       Marvin The Martian Sprite_137: 4383611450179895092
       Marvin The Martian Sprite_138: 7072851851502304319
       Marvin The Martian Sprite_139: 3603844499413007583
@@ -15191,7 +15183,15 @@ TextureImporter:
       Marvin The Martian Sprite_97: -7067058572294183772
       Marvin The Martian Sprite_98: -5451476787319984678
       Marvin The Martian Sprite_99: 2810270403588951881
-      Marvin The Martian Sprite_Idle: 8339307080584402729
+      Marvin The Martian_Idle: 8339307080584402729
+      Marvin The Martian_Walk_01: -4840298146011515599
+      Marvin The Martian_Walk_02: 7859323064155439529
+      Marvin The Martian_Walk_03: 3948956049498421626
+      Marvin The Martian_Walk_04: 5087029396017045116
+      Marvin The Martian_Walk_05: 4628198326527271067
+      Marvin The Martian_Walk_06: -4339439137272891879
+      Marvin The Martian_Walk_07: 1555222056162298631
+      Marvin The Martian_Walk_08: 8083014482184736568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
