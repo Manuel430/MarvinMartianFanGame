@@ -7,7 +7,7 @@ public class Rooms : MonoBehaviour
     public Vector2 roomCenter;
 
     [Header("Camera Movement")]
-    public bool followPlayer;
+    public bool horizontalRoom;
     public bool verticalRoom;
 
     private void OnDrawGizmos()
