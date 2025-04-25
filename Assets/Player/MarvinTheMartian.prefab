@@ -157,7 +157,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.016}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -203,7 +203,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 627621d48e7ec04499af4f3d2022bf9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 2472397689149734454}
   movement: {fileID: 2922638179234384415}
 --- !u!1 &6858179514086139412
 GameObject:
@@ -216,6 +215,7 @@ GameObject:
   - component: {fileID: 2299739747669357285}
   - component: {fileID: 5907813137319184206}
   - component: {fileID: 2922638179234384415}
+  - component: {fileID: 6099835148665032554}
   m_Layer: 0
   m_Name: MarvinTheMartian
   m_TagString: Untagged
@@ -282,9 +282,24 @@ MonoBehaviour:
   groundLayer:
     serializedVersion: 2
     m_Bits: 8
-  playerAnim: {fileID: 0}
+  playerAnim: {fileID: 2870936831203104029}
   playerSpeed: 10
-  jumpPower: 15
+  jumpPower: 20
+--- !u!114 &6099835148665032554
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6858179514086139412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fb9a9bbb07ead3f479205ec15f5cf868, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  firePoint: {fileID: 8415798631573138364}
+  ammo: {fileID: 4788821064970993223, guid: c172b5c7c04b1434e81998e2144fd8bc, type: 3}
+  playerAnim: {fileID: 2870936831203104029}
 --- !u!1 &9134949465117768194
 GameObject:
   m_ObjectHideFlags: 0

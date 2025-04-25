@@ -50,6 +50,25 @@ public class PlayerMovement : MonoBehaviour
         Cursor.visible = false;
     }
 
+    private void Update()
+    {
+        if (IsGrounded())
+        {
+            playerAnim.IsFalling(false);
+            playerAnim.IsJumping(false);
+        }
+        else
+        {
+            if (rBody.linearVelocityY < 0)
+            {
+                playerAnim.IsFalling(true);
+                playerAnim.IsJumping(false);
+            }
+            else
+                playerAnim.IsJumping(true);
+        }
+    }
+
     private void FixedUpdate()
     {
         rBody.linearVelocity = new Vector2(horizontal * playerSpeed, rBody.linearVelocity.y);

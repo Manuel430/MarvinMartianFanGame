@@ -4238,15 +4238,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_106
+      name: Marvin The Martian_Shoot_01
       rect:
         serializedVersion: 2
-        x: 35
-        y: 516
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 36
+        y: 517
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.31666666, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4260,15 +4260,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_107
+      name: Marvin The Martian_Shoot_02
       rect:
         serializedVersion: 2
-        x: 70
-        y: 516
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 71
+        y: 517
+        width: 30
+        height: 32
+      alignment: 9
+      pivot: {x: 0.31666666, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -4282,15 +4282,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_108
+      name: Marvin The Martian_Shoot_03
       rect:
         serializedVersion: 2
-        x: 105
-        y: 516
-        width: 31
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 106
+        y: 517
+        width: 29
+        height: 32
+      alignment: 9
+      pivot: {x: 0.3275862, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -5426,13 +5426,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_160
+      name: Marvin The Martian_Shoot_Walk_01
       rect:
         serializedVersion: 2
-        x: 8
-        y: 442
-        width: 32
-        height: 33
+        x: 9
+        y: 443
+        width: 30
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5448,13 +5448,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_161
+      name: Marvin The Martian_Shoot_Walk_02
       rect:
         serializedVersion: 2
-        x: 43
-        y: 442
-        width: 32
-        height: 34
+        x: 44
+        y: 443
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5470,13 +5470,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_162
+      name: Marvin The Martian_Shoot_Walk_03
       rect:
         serializedVersion: 2
-        x: 77
-        y: 442
-        width: 32
-        height: 34
+        x: 78
+        y: 443
+        width: 30
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -5492,13 +5492,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_163
+      name: Marvin The Martian_Shoot_Walk_04
       rect:
         serializedVersion: 2
-        x: 110
-        y: 442
-        width: 32
-        height: 33
+        x: 111
+        y: 443
+        width: 30
+        height: 31
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -6174,15 +6174,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_194
+      name: Marvin The Martian_Shoot_Jump
       rect:
         serializedVersion: 2
-        x: 170
-        y: 404
-        width: 34
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 171
+        y: 405
+        width: 32
+        height: 35
+      alignment: 9
+      pivot: {x: 0.359375, y: 0.54285717}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6658,15 +6658,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_216
+      name: Marvin The Martian_Jump_01
       rect:
         serializedVersion: 2
-        x: 141
-        y: 366
-        width: 25
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 142
+        y: 367
+        width: 23
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.45714286}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -6680,15 +6680,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_217
+      name: Marvin The Martian_Jump_02
       rect:
         serializedVersion: 2
-        x: 170
-        y: 367
-        width: 25
-        height: 37
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 171
+        y: 368
+        width: 23
+        height: 35
+      alignment: 9
+      pivot: {x: 0.5, y: 0.54285717}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -7076,15 +7076,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_235
+      name: Marvin The Martian_Fall
       rect:
         serializedVersion: 2
-        x: 198
-        y: 368
-        width: 26
-        height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+        x: 199
+        y: 369
+        width: 24
+        height: 30
+      alignment: 9
+      pivot: {x: 0.47916666, y: 0.4666667}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -14621,9 +14621,6 @@ TextureImporter:
       Marvin The Martian Sprite_102: 6496826269325061276
       Marvin The Martian Sprite_103: -6357691407744531586
       Marvin The Martian Sprite_104: 3500432840628214135
-      Marvin The Martian Sprite_106: -6594767737232797138
-      Marvin The Martian Sprite_107: 5019381834845452109
-      Marvin The Martian Sprite_108: -2545883276696173010
       Marvin The Martian Sprite_109: 1298985595405187919
       Marvin The Martian Sprite_11: 6862748215001396459
       Marvin The Martian Sprite_110: 1716571901213226941
@@ -14673,10 +14670,6 @@ TextureImporter:
       Marvin The Martian Sprite_158: -6716156969550586164
       Marvin The Martian Sprite_159: 6600631241414616767
       Marvin The Martian Sprite_16: 1858560846271423310
-      Marvin The Martian Sprite_160: -5374899969188540609
-      Marvin The Martian Sprite_161: 6135434264880188931
-      Marvin The Martian Sprite_162: -1754333490324575692
-      Marvin The Martian Sprite_163: -3876931160334218939
       Marvin The Martian Sprite_164: 5565825474907826440
       Marvin The Martian Sprite_165: 3638845305043949468
       Marvin The Martian Sprite_166: 8448505452633020693
@@ -14710,7 +14703,6 @@ TextureImporter:
       Marvin The Martian Sprite_191: 4451289649490565642
       Marvin The Martian Sprite_192: 9184883162705170518
       Marvin The Martian Sprite_193: 1213171164681519275
-      Marvin The Martian Sprite_194: -6840940766729272710
       Marvin The Martian Sprite_195: -2969542170449337060
       Marvin The Martian Sprite_196: 4765279404339141361
       Marvin The Martian Sprite_197: -7948519453557480671
@@ -14735,8 +14727,6 @@ TextureImporter:
       Marvin The Martian Sprite_213: -390760158269902479
       Marvin The Martian Sprite_214: 5256730575955610582
       Marvin The Martian Sprite_215: 2498565269112665039
-      Marvin The Martian Sprite_216: 5394856212784717475
-      Marvin The Martian Sprite_217: 3945114750093357148
       Marvin The Martian Sprite_218: 6409613792684558363
       Marvin The Martian Sprite_219: 8646027637746599206
       Marvin The Martian Sprite_22: -6487597243740199847
@@ -14756,7 +14746,6 @@ TextureImporter:
       Marvin The Martian Sprite_232: -9105480056991646408
       Marvin The Martian Sprite_233: -5405831316479706306
       Marvin The Martian Sprite_234: -964683683699375586
-      Marvin The Martian Sprite_235: -1897083813437482863
       Marvin The Martian Sprite_236: -3591928147929999750
       Marvin The Martian Sprite_237: 3072396808395055042
       Marvin The Martian Sprite_238: -505472407424683303
@@ -15183,7 +15172,18 @@ TextureImporter:
       Marvin The Martian Sprite_97: -7067058572294183772
       Marvin The Martian Sprite_98: -5451476787319984678
       Marvin The Martian Sprite_99: 2810270403588951881
+      Marvin The Martian_Fall: -1897083813437482863
       Marvin The Martian_Idle: 8339307080584402729
+      Marvin The Martian_Jump_01: 5394856212784717475
+      Marvin The Martian_Jump_02: 3945114750093357148
+      Marvin The Martian_Shoot_01: -6594767737232797138
+      Marvin The Martian_Shoot_02: 5019381834845452109
+      Marvin The Martian_Shoot_03: -2545883276696173010
+      Marvin The Martian_Shoot_Jump: -6840940766729272710
+      Marvin The Martian_Shoot_Walk_01: -5374899969188540609
+      Marvin The Martian_Shoot_Walk_02: 6135434264880188931
+      Marvin The Martian_Shoot_Walk_03: -1754333490324575692
+      Marvin The Martian_Shoot_Walk_04: -3876931160334218939
       Marvin The Martian_Walk_01: -4840298146011515599
       Marvin The Martian_Walk_02: 7859323064155439529
       Marvin The Martian_Walk_03: 3948956049498421626
