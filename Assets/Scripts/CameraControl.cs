@@ -59,7 +59,7 @@ public class CameraControl : MonoBehaviour
             {
                 if (currentRoom.verticalRoom)
                 {
-                    //MoveCameraExpand();
+                    MoveCameraExpand(currentRoom);
                 }
                 else
                 {
@@ -105,6 +105,19 @@ public class CameraControl : MonoBehaviour
         float clampY = Mathf.Clamp(followPlayer.y, Mathf.Round(minBounds.y + CameraHalfHeight()), Mathf.Round(maxBounds.y - CameraHalfHeight()));
 
         transform.position = new Vector3(room.roomCenter.x, clampY, transform.position.z);
+    }
+
+    private void MoveCameraExpand(Rooms room)
+    {
+        Vector2 minBounds = room.roomCenter - room.roomSize / 2;
+        Vector2 maxBounds = room.roomCenter + room.roomSize / 2;
+
+        Vector3 followPlayer = new Vector3(playerPos.position.x, playerPos.position.y, transform.position.z);
+
+        float clampX = Mathf.Clamp(followPlayer.x, Mathf.Round(minBounds.x + CameraHalfWidth()), Mathf.Round(maxBounds.x - CameraHalfWidth()));
+        float clampY = Mathf.Clamp(followPlayer.y, Mathf.Round(minBounds.y + CameraHalfHeight()), Mathf.Round(maxBounds.y - CameraHalfHeight()));
+
+        transform.position = new Vector3(clampX, clampY, transform.position.z);
     }
 
     float CameraHalfWidth()
