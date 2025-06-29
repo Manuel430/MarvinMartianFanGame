@@ -16,6 +16,15 @@ public class Ammo : MonoBehaviour
     {
         if(!collision.CompareTag("Player"))
         {
+            if (collision.CompareTag("Enemy"))
+            {
+                Health enemyHealth = collision.GetComponentInParent<Health>();
+                if (enemyHealth != null)
+                {
+                    enemyHealth.TakeDamage(5);
+                }
+            }
+
             Destroy(gameObject); 
             return;
         }

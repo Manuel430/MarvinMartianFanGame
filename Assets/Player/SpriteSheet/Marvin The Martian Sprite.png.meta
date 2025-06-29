@@ -2346,13 +2346,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_20
+      name: Enemy_Base
       rect:
         serializedVersion: 2
-        x: 720
-        y: 576
-        width: 28
-        height: 34
+        x: 721
+        y: 577
+        width: 26
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -2368,13 +2368,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_21
+      name: Enemy_Walk
       rect:
         serializedVersion: 2
-        x: 754
-        y: 576
-        width: 28
-        height: 34
+        x: 755
+        y: 577
+        width: 26
+        height: 32
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -14613,6 +14613,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
+      Enemy_Base: -6074519793763603508
+      Enemy_Walk: -4354775227515608070
       Marvin The Martian Sprite_0: 7354309815530555926
       Marvin The Martian Sprite_1: -6436887814010009717
       Marvin The Martian Sprite_10: -2601621705826256063
@@ -14709,7 +14711,6 @@ TextureImporter:
       Marvin The Martian Sprite_198: -5396844640598060808
       Marvin The Martian Sprite_199: -8048535003456857822
       Marvin The Martian Sprite_2: -4744909940582398558
-      Marvin The Martian Sprite_20: -6074519793763603508
       Marvin The Martian Sprite_200: -8200554534917732925
       Marvin The Martian Sprite_201: 6190718386058170108
       Marvin The Martian Sprite_202: 7006272241427542661
@@ -14720,7 +14721,6 @@ TextureImporter:
       Marvin The Martian Sprite_207: 1252008796891706326
       Marvin The Martian Sprite_208: -5466050025522983757
       Marvin The Martian Sprite_209: -1729332959332204617
-      Marvin The Martian Sprite_21: -4354775227515608070
       Marvin The Martian Sprite_210: 6590076844883655652
       Marvin The Martian Sprite_211: 2296310198157768994
       Marvin The Martian Sprite_212: 6551959001667283950
