@@ -75,7 +75,7 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Flip() { isFacingRight = !isFacingRight; transform.Rotate(0f, 180f, 0f); }
-    private bool IsGrounded() { return Physics2D.OverlapCircle(groundCheck.position, 0.3f, groundLayer); }
+    private bool IsGrounded() { return Physics2D.OverlapCircle(groundCheck.position, 0.4f, groundLayer); }
 
     #region Inputs
     private void Move(InputAction.CallbackContext context)

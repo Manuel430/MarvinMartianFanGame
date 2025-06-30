@@ -7,6 +7,7 @@ public class Blaster : MonoBehaviour
     [SerializeField] Transform firePoint;
     [SerializeField] GameObject ammo;
     [SerializeField] PlayerAnimation playerAnim;
+    [SerializeField] LayerMask groundLayer;
     PlayerControls playerControls;
 
     #region Cutscene
@@ -36,6 +37,12 @@ public class Blaster : MonoBehaviour
     private void Shoot(InputAction.CallbackContext context)
     {
         playerAnim.Shooting();
+        if (InGround())
+        {
+            return;
+        }
         Instantiate(ammo, firePoint.position, firePoint.rotation);
     }
+
+    private bool InGround() { return Physics2D.OverlapCircle(firePoint.position, 0.5f, groundLayer); }
 }

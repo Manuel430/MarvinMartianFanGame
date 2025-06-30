@@ -27,7 +27,7 @@ public class EnemyPatrol : MonoBehaviour
 
     void Patrol()
     {
-        if(IsFacingRight())
+        if (IsFacingRight())
         {
             rBody.linearVelocity = new Vector2(patrolSpeed, rBody.linearVelocityY);
         }

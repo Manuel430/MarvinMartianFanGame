@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 168909605177316679}
   - component: {fileID: 8785276537155529495}
   - component: {fileID: 3307691159206184992}
+  - component: {fileID: 5645225115871715125}
   m_Layer: 0
   m_Name: EnemySprite
   m_TagString: Untagged
@@ -98,7 +99,7 @@ BoxCollider2D:
   m_Enabled: 1
   serializedVersion: 3
   m_Density: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 40bcf8a9653893040a6468fd9087e8f6, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -134,6 +135,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &5645225115871715125
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4560525987092782080}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76e6e109abfbc024981e76be5959364c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &4830967334192082158
 GameObject:
   m_ObjectHideFlags: 0
@@ -257,3 +270,10 @@ MonoBehaviour:
   health: 0
   maxHealth: 100
   isPlayer: 0
+  visual: {fileID: 0}
+  defaultColor: {r: 0, g: 0, b: 0, a: 0}
+  damageColor: {r: 0, g: 0, b: 0, a: 0}
+  lerpSpeed: 10
+  colorAttributeName: _Color
+  enemyExplosion: {fileID: 0}
+  enemyCenter: {fileID: 0}

@@ -216,9 +216,10 @@ GameObject:
   - component: {fileID: 5907813137319184206}
   - component: {fileID: 2922638179234384415}
   - component: {fileID: 6099835148665032554}
+  - component: {fileID: 2245451423665320608}
   m_Layer: 0
   m_Name: MarvinTheMartian
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -300,6 +301,31 @@ MonoBehaviour:
   firePoint: {fileID: 8415798631573138364}
   ammo: {fileID: 4788821064970993223, guid: c172b5c7c04b1434e81998e2144fd8bc, type: 3}
   playerAnim: {fileID: 2870936831203104029}
+  groundLayer:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!114 &2245451423665320608
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6858179514086139412}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c830f33adaca26d40a5d6d70ea2cf965, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 0
+  maxHealth: 100
+  isPlayer: 1
+  visual: {fileID: 2406554193019277071}
+  defaultColor: {r: 1, g: 1, b: 1, a: 1}
+  damageColor: {r: 1, g: 0, b: 0, a: 1}
+  lerpSpeed: 10
+  colorAttributeName: _Color
+  enemyExplosion: {fileID: 0}
+  enemyCenter: {fileID: 0}
 --- !u!1 &9134949465117768194
 GameObject:
   m_ObjectHideFlags: 0

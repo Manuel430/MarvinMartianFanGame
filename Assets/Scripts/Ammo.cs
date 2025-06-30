@@ -1,3 +1,4 @@
+using UnityEditor.ShaderGraph.Internal;
 using UnityEngine;
 
 public class Ammo : MonoBehaviour
@@ -25,7 +26,10 @@ public class Ammo : MonoBehaviour
                 }
             }
 
-            Destroy(gameObject); 
+            if(!collision.CompareTag("EnemyCollider"))
+            {
+                Destroy(gameObject);
+            } 
             return;
         }
     }
