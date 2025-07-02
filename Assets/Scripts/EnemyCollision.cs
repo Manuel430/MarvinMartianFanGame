@@ -6,10 +6,21 @@ public class EnemyCollision : MonoBehaviour
     {
         if(collision.gameObject.CompareTag("Player"))
         {
-            Health playerhealth = collision.gameObject.GetComponent<Health>();
-            if(playerhealth != null)
+            Health playerHealth = collision.gameObject.GetComponent<Health>();
+            PlayerMovement playerMovement = collision.gameObject.GetComponent<PlayerMovement>();
+            if(playerHealth != null && playerMovement != null)
             {
-                playerhealth.TakeDamage(5);
+                playerMovement.SetKBTimer();
+                if(collision.transform.position.x <= transform.position.x)
+                {
+                    playerMovement.GetKnockbackPush(true);
+                }
+                else
+                {
+                    playerMovement.GetKnockbackPush(false);
+                }
+
+                    playerHealth.TakeDamage(5);
             }
             //Knockback
         }

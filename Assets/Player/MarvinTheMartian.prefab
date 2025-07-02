@@ -286,6 +286,10 @@ MonoBehaviour:
   playerAnim: {fileID: 2870936831203104029}
   playerSpeed: 10
   jumpPower: 20
+  kbForce: 10
+  kbCounter: 0
+  kbTotalTime: 0.2
+  knockFromRight: 0
 --- !u!114 &6099835148665032554
 MonoBehaviour:
   m_ObjectHideFlags: 0

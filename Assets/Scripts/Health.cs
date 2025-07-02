@@ -59,8 +59,11 @@ public class Health : MonoBehaviour
             health = 0;
             if(isPlayer)
             {
-                Debug.Log("Player is Dead");
-                //Play Death Animation and turn off movement
+                PlayerMovement playerMovement = GetComponent<PlayerMovement>();
+                if (playerMovement != null)
+                {
+                    playerMovement.GameOver();
+                }
                 return;
             }
             {

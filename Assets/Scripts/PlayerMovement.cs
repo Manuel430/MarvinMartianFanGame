@@ -1,5 +1,7 @@
+using UnityEditor.TextCore.Text;
 using UnityEngine;
 using UnityEngine.InputSystem;
+using UnityEngine.Rendering.Universal;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -15,21 +17,33 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float jumpPower;
     float horizontal;
     bool isFacingRight = true;
+    bool isDead = false;
 
-    #region Cutscene
-    public bool SetCutscene(bool cutscene)
+    [Header("Knockback")]
+    [SerializeField] float kbForce;
+    [SerializeField] float kbCounter;
+    [SerializeField] float kbTotalTime;
+    [SerializeField] bool knockFromRight;
+
+    #region Public
+    public void GameOver()
     {
-        if (cutscene)
-        {
-            horizontal = 0;
-            playerControls.Player.Disable();
-        }
-        else
-        {
-            playerControls.Player.Enable();
-        }
+        Debug.Log("Game Over");
+        horizontal = 0;
+        playerControls.Player.Disable();
+        isDead = true;
 
-        return cutscene;
+        rBody.constraints = RigidbodyConstraints2D.FreezeAll;
+    }
+
+    public void SetKBTimer()
+    {
+        kbCounter = kbTotalTime;
+    }
+
+    public bool GetKnockbackPush(bool isHitRight)
+    {
+        return knockFromRight = isHitRight;
     }
     #endregion
 
@@ -71,7 +85,27 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        rBody.linearVelocity = new Vector2(horizontal * playerSpeed, rBody.linearVelocity.y);
+        if(isDead) { return; }
+
+        if (kbCounter <= 0)
+        {
+            rBody.linearVelocity = new Vector2(horizontal * playerSpeed, rBody.linearVelocity.y);
+
+            kbCounter = 0;
+        }
+        else
+        {
+            if (knockFromRight)
+            {
+                rBody.linearVelocity = new Vector2(-kbForce, kbForce);
+            }
+            else if (!knockFromRight)
+            {
+                rBody.linearVelocity = new Vector2(kbForce, kbForce);
+            }
+
+            kbCounter -= Time.deltaTime;
+        }
     }
 
     private void Flip() { isFacingRight = !isFacingRight; transform.Rotate(0f, 180f, 0f); }
