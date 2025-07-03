@@ -5,6 +5,7 @@ public class PlayerAnimation : MonoBehaviour
     [Header("Outside Inputs")]
     [SerializeField] PlayerMovement movement;
     Animator animator;
+    bool canShoot = true;
 
     private void Awake()
     {
@@ -29,5 +30,30 @@ public class PlayerAnimation : MonoBehaviour
     public void Shooting()
     {
         animator.SetTrigger("shooting");
+    }
+
+    public void Dead()
+    {
+        animator.SetTrigger("isDead");
+    }
+
+    public void Hit()
+    {
+        animator.SetTrigger("isHit");
+    }
+
+    public void AllowShooting()
+    {
+        canShoot = true;
+    }
+
+    public void DoNotAllowShooting()
+    {
+        canShoot = false;
+    }
+
+    public bool CanShoot()
+    {
+        return canShoot;
     }
 }

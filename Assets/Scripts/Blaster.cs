@@ -9,11 +9,11 @@ public class Blaster : MonoBehaviour
     [SerializeField] PlayerAnimation playerAnim;
     [SerializeField] LayerMask groundLayer;
     PlayerControls playerControls;
-
-    #region Cutscene
-    public bool SetCutscene(bool inCutscene)
+    
+    #region Public
+    public void StopShooting(bool isHit)
     {
-        if (inCutscene)
+        if (isHit)
         {
             playerControls.Player.Disable();
         }
@@ -21,8 +21,6 @@ public class Blaster : MonoBehaviour
         {
             playerControls.Player.Enable();
         }
-
-        return inCutscene;
     }
     #endregion
 
@@ -36,6 +34,8 @@ public class Blaster : MonoBehaviour
 
     private void Shoot(InputAction.CallbackContext context)
     {
+        if (!playerAnim.CanShoot()) { return; }
+
         playerAnim.Shooting();
         if (InGround())
         {

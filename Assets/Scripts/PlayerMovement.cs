@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEditor.TextCore.Text;
 using UnityEngine;
 using UnityEngine.InputSystem;
@@ -34,10 +35,12 @@ public class PlayerMovement : MonoBehaviour
         isDead = true;
 
         rBody.constraints = RigidbodyConstraints2D.FreezeAll;
+        playerAnim.Dead();
     }
 
     public void SetKBTimer()
     {
+        playerAnim.Hit();
         kbCounter = kbTotalTime;
     }
 

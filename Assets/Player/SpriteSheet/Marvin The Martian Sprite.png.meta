@@ -7736,7 +7736,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_265
+      name: Marvin The Martian_Hit
       rect:
         serializedVersion: 2
         x: 126
@@ -11916,13 +11916,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_455
+      name: Marvin The Martian_Dead
       rect:
         serializedVersion: 2
-        x: 872
-        y: 167
-        width: 26
-        height: 32
+        x: 873
+        y: 168
+        width: 24
+        height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -13918,13 +13918,13 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_546
+      name: Marvin The Martian_Icon
       rect:
         serializedVersion: 2
-        x: 683
-        y: 21
-        width: 18
-        height: 18
+        x: 684
+        y: 22
+        width: 16
+        height: 16
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -14778,7 +14778,6 @@ TextureImporter:
       Marvin The Martian Sprite_262: -3246030826864397932
       Marvin The Martian Sprite_263: -2937817214298753273
       Marvin The Martian Sprite_264: -977254810015029366
-      Marvin The Martian Sprite_265: -4482986257849408642
       Marvin The Martian Sprite_266: -5209285676505561810
       Marvin The Martian Sprite_267: -2554823941098206837
       Marvin The Martian Sprite_268: -183965970479400195
@@ -14989,7 +14988,6 @@ TextureImporter:
       Marvin The Martian Sprite_452: -4996739494444213748
       Marvin The Martian Sprite_453: 6220700336106157340
       Marvin The Martian Sprite_454: -5443309224536176494
-      Marvin The Martian Sprite_455: 3849098384632254805
       Marvin The Martian Sprite_456: 7180080090436985365
       Marvin The Martian Sprite_457: -7243248007569264703
       Marvin The Martian Sprite_458: -1279288301439687735
@@ -15090,7 +15088,6 @@ TextureImporter:
       Marvin The Martian Sprite_543: 4155150806648275237
       Marvin The Martian Sprite_544: -4494607378976971969
       Marvin The Martian Sprite_545: -5654226503990244363
-      Marvin The Martian Sprite_546: -138797747355507026
       Marvin The Martian Sprite_547: 6570115191034595185
       Marvin The Martian Sprite_548: -6618998532993257990
       Marvin The Martian Sprite_549: 2621123268119597438
@@ -15172,7 +15169,10 @@ TextureImporter:
       Marvin The Martian Sprite_97: -7067058572294183772
       Marvin The Martian Sprite_98: -5451476787319984678
       Marvin The Martian Sprite_99: 2810270403588951881
+      Marvin The Martian_Dead: 3849098384632254805
       Marvin The Martian_Fall: -1897083813437482863
+      Marvin The Martian_Hit: -4482986257849408642
+      Marvin The Martian_Icon: -138797747355507026
       Marvin The Martian_Idle: 8339307080584402729
       Marvin The Martian_Jump_01: 5394856212784717475
       Marvin The Martian_Jump_02: 3945114750093357148

@@ -305,6 +305,7 @@ MonoBehaviour:
   firePoint: {fileID: 8415798631573138364}
   ammo: {fileID: 4788821064970993223, guid: c172b5c7c04b1434e81998e2144fd8bc, type: 3}
   playerAnim: {fileID: 2870936831203104029}
+  playerMovement: {fileID: 2922638179234384415}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8

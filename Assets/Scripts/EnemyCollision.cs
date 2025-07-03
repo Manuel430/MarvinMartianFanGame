@@ -8,6 +8,7 @@ public class EnemyCollision : MonoBehaviour
         {
             Health playerHealth = collision.gameObject.GetComponent<Health>();
             PlayerMovement playerMovement = collision.gameObject.GetComponent<PlayerMovement>();
+
             if(playerHealth != null && playerMovement != null)
             {
                 playerMovement.SetKBTimer();
