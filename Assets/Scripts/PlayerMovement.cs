@@ -54,6 +54,14 @@ public class PlayerMovement : MonoBehaviour
     {
         playerControls.Player.Enable();
     }
+
+    public void StopMoving()
+    {
+        horizontal = 0;
+        playerControls.Player.Disable();
+
+        rBody.constraints = RigidbodyConstraints2D.FreezeAll;
+    }
     #endregion
 
     private void Awake()

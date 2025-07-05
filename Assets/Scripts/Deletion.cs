@@ -6,4 +6,9 @@ public class Deletion : MonoBehaviour
     {
         Destroy(transform.parent.gameObject);
     }
+
+    public void DestroyThisObject()
+    {
+        Destroy(gameObject);
+    }
 }

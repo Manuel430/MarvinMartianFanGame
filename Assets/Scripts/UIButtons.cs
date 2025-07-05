@@ -16,12 +16,15 @@ public class UIButtons : MonoBehaviour
 
     public void MainMenu()
     {
+        Debug.Log("PressingButton");
         sceneManagement.SetLevel(0);
+        sceneManagement.NextScene();
     }
 
     public void Restart(int currentScene)
     {
         sceneManagement.SetLevel(currentScene);
+        sceneManagement.NextScene();
     }
 
     public void Quit()

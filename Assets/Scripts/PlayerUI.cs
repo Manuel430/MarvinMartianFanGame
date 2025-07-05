@@ -1,4 +1,5 @@
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -17,6 +18,9 @@ public class PlayerUI : MonoBehaviour
     PlayerControls playerControls;
     bool isPaused = false;
     bool cannotPause = false;
+
+    [Header("NextLevelUI")]
+    [SerializeField] GameObject nextLevelUI;
 
     #region Public
     public void UpdateHealth()
@@ -54,9 +58,16 @@ public class PlayerUI : MonoBehaviour
         Cursor.visible = false;
     }
 
+    public void SetNextLevel()
+    {
+        nextLevelUI.SetActive(true);
+    }
+
     #endregion
     private void Awake()
     {
+        SetUnpause();
+
         playerHealth = GetComponent<Health>();
         if (playerHealth != null )
         {
@@ -80,6 +91,7 @@ public class PlayerUI : MonoBehaviour
             if (isPaused)
             {
                 Time.timeScale = 0f;
+                if (this.IsDestroyed()) { return; }
                 pauseUI.SetActive(true);
                 healthUI.SetActive(false);
 
@@ -89,6 +101,7 @@ public class PlayerUI : MonoBehaviour
             else
             {
                 Time.timeScale = 1f;
+                if (this.IsDestroyed()) { return; }
                 pauseUI.SetActive(false);
                 healthUI.SetActive(true);
 

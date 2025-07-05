@@ -42,6 +42,11 @@ public class PlayerAnimation : MonoBehaviour
         animator.SetTrigger("isHit");
     }
 
+    public void HasWon()
+    {
+        animator.SetTrigger("hasWon");
+    }
+
     public void AllowShooting()
     {
         canShoot = true;
@@ -73,5 +78,11 @@ public class PlayerAnimation : MonoBehaviour
 
         Blaster playerBlaster = GetComponentInParent<Blaster>();
         if (playerBlaster != null) { playerBlaster.StopShooting(false); }
+    }
+
+    public void NextLevel()
+    {
+        PlayerUI playerUI = GetComponentInParent<PlayerUI>();
+        if (playerUI != null) { playerUI.SetNextLevel(); }
     }
 }
