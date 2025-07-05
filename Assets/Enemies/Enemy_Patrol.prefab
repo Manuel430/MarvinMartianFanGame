@@ -120,6 +120,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: EnemyCollider
       objectReference: {fileID: 0}
+    - target: {fileID: 5645225115871715125, guid: 02cb00c98d25e254b980190e0ef3b7fd, type: 3}
+      propertyPath: damageDealt
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 6821347061735435713, guid: 02cb00c98d25e254b980190e0ef3b7fd, type: 3}
       propertyPath: m_LocalPosition.x
       value: 50

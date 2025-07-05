@@ -2,6 +2,8 @@ using UnityEngine;
 
 public class EnemyCollision : MonoBehaviour
 {
+    [SerializeField] int damageDealt;
+
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if(collision.gameObject.CompareTag("Player"))
@@ -21,9 +23,8 @@ public class EnemyCollision : MonoBehaviour
                     playerMovement.GetKnockbackPush(false);
                 }
 
-                    playerHealth.TakeDamage(5);
+                    playerHealth.TakeDamage(damageDealt);
             }
-            //Knockback
         }
     }
 }

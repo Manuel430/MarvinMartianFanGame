@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] PlayerAnimation playerAnim;
     Rigidbody2D rBody;
     PlayerControls playerControls;
+    PlayerUI playerUI;
 
     [Header("Player Stats")]
     [SerializeField] float playerSpeed;
@@ -56,6 +57,8 @@ public class PlayerMovement : MonoBehaviour
 
         playerControls = new PlayerControls();
         playerControls.Player.Enable();
+
+        playerUI = GetComponent<PlayerUI>();
 
         playerControls.Player.Move.performed += Move;
         playerControls.Player.Move.canceled += Move;
@@ -112,11 +115,13 @@ public class PlayerMovement : MonoBehaviour
     }
 
     private void Flip() { isFacingRight = !isFacingRight; transform.Rotate(0f, 180f, 0f); }
-    private bool IsGrounded() { return Physics2D.OverlapCircle(groundCheck.position, 0.4f, groundLayer); }
+    private bool IsGrounded() { return Physics2D.OverlapCircle(groundCheck.position, 0.6f, groundLayer); }
 
     #region Inputs
     private void Move(InputAction.CallbackContext context)
     {
+        if(playerUI.IsPaused()) { return; }
+
         if(context.performed)
         {
             horizontal = context.ReadValue<Vector2>().x;
@@ -140,7 +145,9 @@ public class PlayerMovement : MonoBehaviour
 
     private void Jump(InputAction.CallbackContext context)
     {
-        if(context.performed && IsGrounded())
+        if (playerUI.IsPaused()) { return; }
+
+        if (context.performed && IsGrounded())
         {
             rBody.linearVelocity = new Vector2(rBody.linearVelocityX, jumpPower);
         }

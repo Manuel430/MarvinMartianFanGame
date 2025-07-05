@@ -9,6 +9,7 @@ public class Blaster : MonoBehaviour
     [SerializeField] PlayerAnimation playerAnim;
     [SerializeField] LayerMask groundLayer;
     PlayerControls playerControls;
+    PlayerUI playerUI;
     
     #region Public
     public void StopShooting(bool isHit)
@@ -27,6 +28,9 @@ public class Blaster : MonoBehaviour
     private void Awake()
     {
         playerControls = new PlayerControls();
+
+        playerUI = GetComponent<PlayerUI>();
+
         playerControls.Player.Enable();
 
         playerControls.Player.Shoot.performed += Shoot;
@@ -34,6 +38,8 @@ public class Blaster : MonoBehaviour
 
     private void Shoot(InputAction.CallbackContext context)
     {
+        if (playerUI.IsPaused()) { return; }
+
         if (!playerAnim.CanShoot()) { return; }
 
         playerAnim.Shooting();

@@ -56,4 +56,13 @@ public class PlayerAnimation : MonoBehaviour
     {
         return canShoot;
     }
+
+    public void GameOver()
+    {
+        PlayerUI playerUI = GetComponentInParent<PlayerUI>();
+        if (playerUI != null)
+        {
+            playerUI.GameOverUI();
+        }
+    }
 }

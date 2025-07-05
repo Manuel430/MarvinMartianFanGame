@@ -60,7 +60,7 @@ Transform:
   m_GameObject: {fileID: 2406554193019277071}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 30, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -305,7 +305,6 @@ MonoBehaviour:
   firePoint: {fileID: 8415798631573138364}
   ammo: {fileID: 4788821064970993223, guid: c172b5c7c04b1434e81998e2144fd8bc, type: 3}
   playerAnim: {fileID: 2870936831203104029}
-  playerMovement: {fileID: 2922638179234384415}
   groundLayer:
     serializedVersion: 2
     m_Bits: 8

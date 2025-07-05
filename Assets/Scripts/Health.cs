@@ -26,6 +26,18 @@ public class Health : MonoBehaviour
     [SerializeField] GameObject enemyExplosion;
     [SerializeField] Transform enemyCenter;
 
+    #region Public
+    public int GetHealth()
+    {
+        return health;
+    }
+
+    public int GetMaxHealth()
+    {
+        return maxHealth;
+    }
+    #endregion
+
     private void Awake()
     {
         health = maxHealth;
@@ -54,7 +66,17 @@ public class Health : MonoBehaviour
         }
 
         health -= damage;
-        if(health < 0)
+        
+        if(isPlayer)
+        {
+            PlayerUI playerUI = GetComponent<PlayerUI>();
+            if(playerUI != null)
+            {
+                playerUI.UpdateHealth();
+            }
+        }
+
+        if(health <= 0)
         {
             health = 0;
             if(isPlayer)
@@ -62,6 +84,11 @@ public class Health : MonoBehaviour
                 PlayerMovement playerMovement = GetComponent<PlayerMovement>();
                 if (playerMovement != null)
                 {
+                    PlayerUI playerUI = GetComponent<PlayerUI>();
+                    if (playerUI != null)
+                    {
+                        playerUI.CannotPause();
+                    }
                     playerMovement.GameOver();
                 }
                 return;
