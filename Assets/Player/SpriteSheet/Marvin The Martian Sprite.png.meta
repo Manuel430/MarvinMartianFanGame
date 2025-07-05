@@ -12356,7 +12356,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_475
+      name: UFO_Goal
       rect:
         serializedVersion: 2
         x: 487
@@ -15009,7 +15009,6 @@ TextureImporter:
       Marvin The Martian Sprite_472: -4023169021510088917
       Marvin The Martian Sprite_473: -5738905868839418711
       Marvin The Martian Sprite_474: 8888148833438723425
-      Marvin The Martian Sprite_475: -3829743471949277476
       Marvin The Martian Sprite_48: -6092786186650046616
       Marvin The Martian Sprite_481: -1691367073546901651
       Marvin The Martian Sprite_482: 30947539330308300
@@ -15192,6 +15191,7 @@ TextureImporter:
       Marvin The Martian_Walk_06: -4339439137272891879
       Marvin The Martian_Walk_07: 1555222056162298631
       Marvin The Martian_Walk_08: 8083014482184736568
+      UFO_Goal: -3829743471949277476
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

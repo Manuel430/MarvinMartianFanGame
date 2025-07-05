@@ -87,6 +87,7 @@ public class Health : MonoBehaviour
                     PlayerUI playerUI = GetComponent<PlayerUI>();
                     if (playerUI != null)
                     {
+                        playerUI.UpdateHealth();
                         playerUI.CannotPause();
                     }
                     playerMovement.GameOver();

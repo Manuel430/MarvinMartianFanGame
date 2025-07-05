@@ -49,6 +49,11 @@ public class PlayerMovement : MonoBehaviour
     {
         return knockFromRight = isHitRight;
     }
+
+    public void StartMoving()
+    {
+        playerControls.Player.Enable();
+    }
     #endregion
 
     private void Awake()
@@ -56,7 +61,6 @@ public class PlayerMovement : MonoBehaviour
         rBody = GetComponent<Rigidbody2D>();
 
         playerControls = new PlayerControls();
-        playerControls.Player.Enable();
 
         playerUI = GetComponent<PlayerUI>();
 

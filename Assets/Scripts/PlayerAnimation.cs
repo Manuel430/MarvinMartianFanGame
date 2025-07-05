@@ -65,4 +65,13 @@ public class PlayerAnimation : MonoBehaviour
             playerUI.GameOverUI();
         }
     }
+
+    public void StartGame()
+    {
+        PlayerMovement playerMovement = GetComponentInParent<PlayerMovement>();
+        if (playerMovement != null) { playerMovement.StartMoving(); }
+
+        Blaster playerBlaster = GetComponentInParent<Blaster>();
+        if (playerBlaster != null) { playerBlaster.StopShooting(false); }
+    }
 }

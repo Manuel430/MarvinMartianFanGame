@@ -31,8 +31,6 @@ public class Blaster : MonoBehaviour
 
         playerUI = GetComponent<PlayerUI>();
 
-        playerControls.Player.Enable();
-
         playerControls.Player.Shoot.performed += Shoot;
     }
 
