@@ -147,6 +147,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 76e6e109abfbc024981e76be5959364c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  damageDealt: 0
 --- !u!1 &4830967334192082158
 GameObject:
   m_ObjectHideFlags: 0
@@ -268,7 +269,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 0
-  maxHealth: 100
+  maxHealth: 25
   isPlayer: 0
   visual: {fileID: 0}
   defaultColor: {r: 0, g: 0, b: 0, a: 0}
