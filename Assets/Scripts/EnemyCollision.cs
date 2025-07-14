@@ -29,7 +29,6 @@ public class EnemyCollision : MonoBehaviour
 
             if (isAmmo)
             {
-                Debug.Log(collision);
                 Destroy(gameObject);
             }
         }
