@@ -3,6 +3,7 @@ using UnityEngine;
 public class EnemyCollision : MonoBehaviour
 {
     [SerializeField] int damageDealt;
+    [SerializeField] bool isAmmo;
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -24,6 +25,20 @@ public class EnemyCollision : MonoBehaviour
                 }
 
                     playerHealth.TakeDamage(damageDealt);
+            }
+
+            if (isAmmo)
+            {
+                Debug.Log(collision);
+                Destroy(gameObject);
+            }
+        }
+
+        if (isAmmo)
+        {
+            if (collision.gameObject.layer == 6 || collision.gameObject.layer == 3)
+            {
+                Destroy(gameObject);
             }
         }
     }

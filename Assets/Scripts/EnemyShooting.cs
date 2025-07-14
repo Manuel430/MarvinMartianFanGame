@@ -6,20 +6,28 @@ public class EnemyShooting : MonoBehaviour
     [SerializeField] Transform firepoint;
     [SerializeField] GameObject ammo;
     [SerializeField] LayerMask groundLayer;
-    Animator enemyAnimator;
+    [SerializeField] EnemyAnimation enemyAnim;
 
     [Header("Shooting")]
     [SerializeField] float shootCooldown;
     float shootTime;
     bool willShoot;
 
+    private void Awake()
+    {
+        shootTime = 0;
+    }
+
     private void Update()
     {
-        --shootTime;
-        if(willShoot && shootTime <= 0)
+        if (willShoot)
         {
-            shootTime = 0;
-            //Shoot();
+            shootTime -= Time.deltaTime;
+            if (shootTime <= 0)
+            {
+                shootTime = 0;
+                Shoot();
+            }
         }
     }
 
@@ -27,8 +35,8 @@ public class EnemyShooting : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Player in Range");
-
+            Shoot();
+            enemyAnim.IsShooting(true);
         }
     }
 
@@ -36,12 +44,16 @@ public class EnemyShooting : MonoBehaviour
     {
         if (collision.CompareTag("Player"))
         {
-            Debug.Log("Player out of Range");
+            willShoot = false;
+            shootTime = shootCooldown;
+            enemyAnim.IsShooting(false);
         }
     }
 
     private void Shoot()
     {
-        
+        Instantiate(ammo, firepoint.position, firepoint.rotation);
+        shootTime = shootCooldown;
+        willShoot = true;
     }
 }

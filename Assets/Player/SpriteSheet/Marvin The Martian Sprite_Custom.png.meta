@@ -1828,15 +1828,15 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_0
+      name: Marvin The Martian_StarGazing
       rect:
         serializedVersion: 2
-        x: 4
-        y: 589
-        width: 9
-        height: 9
+        x: 66
+        y: 573
+        width: 23
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1850,15 +1850,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_1
+      name: Marvin The Martian_Sleep
       rect:
         serializedVersion: 2
-        x: 10
-        y: 585
-        width: 21
-        height: 34
+        x: 18
+        y: 573
+        width: 23
+        height: 30
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -1867,72 +1867,6 @@ TextureImporter:
       bones: []
       spriteID: e839628c4cff7fd60800000000000000
       internalID: 7924083290018321294
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_2
-      rect:
-        serializedVersion: 2
-        x: 35
-        y: 585
-        width: 21
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8147879e34d0886d0800000000000000
-      internalID: -2988123767429368808
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_3
-      rect:
-        serializedVersion: 2
-        x: 61
-        y: 585
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: f1e10212a5f033960800000000000000
-      internalID: 7580419477571903007
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_4
-      rect:
-        serializedVersion: 2
-        x: 96
-        y: 585
-        width: 32
-        height: 34
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: b981bb739334dc140800000000000000
-      internalID: 4741519895718205595
       vertices: []
       indices: 
       edges: []
@@ -2422,116 +2356,6 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_27
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 565
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e3d5a596588c30fb0800000000000000
-      internalID: -4682678712211448514
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_28
-      rect:
-        serializedVersion: 2
-        x: 17
-        y: 565
-        width: 6
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: a12766ad599528dd0800000000000000
-      internalID: -2485325544205946342
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_29
-      rect:
-        serializedVersion: 2
-        x: 22
-        y: 564
-        width: 9
-        height: 11
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 1275f5e5ca9be1d60800000000000000
-      internalID: 7862926149404284705
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_30
-      rect:
-        serializedVersion: 2
-        x: 33
-        y: 565
-        width: 10
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 780b2612fe55455b0800000000000000
-      internalID: -5380581169255239545
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_31
-      rect:
-        serializedVersion: 2
-        x: 42
-        y: 565
-        width: 8
-        height: 9
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 27ac71aa797d51aa0800000000000000
-      internalID: -6190805066357159310
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
       name: Marvin The Martian Sprite_Custom_32
       rect:
         serializedVersion: 2
@@ -2571,72 +2395,6 @@ TextureImporter:
       bones: []
       spriteID: a35485979ea65f210800000000000000
       internalID: 1366115612972565818
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_34
-      rect:
-        serializedVersion: 2
-        x: 63
-        y: 565
-        width: 7
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5d0bf1f4e6a55bd50800000000000000
-      internalID: 6752402646132306133
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_35
-      rect:
-        serializedVersion: 2
-        x: 69
-        y: 565
-        width: 14
-        height: 10
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 6ff52cb52d5847820800000000000000
-      internalID: 2915101997344645110
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Marvin The Martian Sprite_Custom_36
-      rect:
-        serializedVersion: 2
-        x: 85
-        y: 563
-        width: 11
-        height: 12
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 7c3f3c4a3b1ba5e90800000000000000
-      internalID: -7036116082691411001
       vertices: []
       indices: 
       edges: []
@@ -5839,8 +5597,8 @@ TextureImporter:
         y: 417
         width: 37
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -14265,8 +14023,8 @@ TextureImporter:
         y: 380
         width: 37
         height: 32
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -14287,8 +14045,8 @@ TextureImporter:
         y: 380
         width: 35
         height: 32
-      alignment: 0
-      pivot: {x: 0, y: 0}
+      alignment: 9
+      pivot: {x: 0.35, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -14319,8 +14077,6 @@ TextureImporter:
       Enemy02_Shot_01: -7275172058799670412
       Enemy02_Shot_02: 1554025530
       Enemy02_Shot_03: 874778396
-      Marvin The Martian Sprite_Custom_0: -6220363198363222954
-      Marvin The Martian Sprite_Custom_1: 7924083290018321294
       Marvin The Martian Sprite_Custom_10: -4565741092858341517
       Marvin The Martian Sprite_Custom_100: 8574519393771747378
       Marvin The Martian Sprite_Custom_101: 4334223032470221422
@@ -14894,6 +14650,8 @@ TextureImporter:
       Marvin The Martian Sprite_Custom_97: -456581644246379910
       Marvin The Martian Sprite_Custom_98: 4776291783703338973
       Marvin The Martian Sprite_Custom_99: 5313798445748304200
+      Marvin The Martian_Sleep: 7924083290018321294
+      Marvin The Martian_StarGazing: -6220363198363222954
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

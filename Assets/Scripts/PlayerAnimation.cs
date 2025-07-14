@@ -47,6 +47,11 @@ public class PlayerAnimation : MonoBehaviour
         animator.SetTrigger("hasWon");
     }
 
+    public void IsInvisible()
+    {
+        animator.SetTrigger("isInvisible");
+    }
+
     public void AllowShooting()
     {
         canShoot = true;
