@@ -5,11 +5,10 @@ public class WorldWarp : MonoBehaviour
     [Header("Alternate Worlds")]
     [SerializeField] GameObject DarkWorld;
     [SerializeField] GameObject LightWorld;
-    bool inDarkWorld;
+    [SerializeField] bool inDarkWorld;
 
     private void Awake()
     {
-        inDarkWorld = true;
         DarkWorld.SetActive(true);
         LightWorld.SetActive(false);
     }
