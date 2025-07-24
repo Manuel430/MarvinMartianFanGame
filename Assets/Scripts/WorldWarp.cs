@@ -2,37 +2,11 @@ using UnityEngine;
 
 public class WorldWarp : MonoBehaviour
 {
-    [Header("Alternate Worlds")]
-    [SerializeField] GameObject DarkWorld;
-    [SerializeField] GameObject LightWorld;
-    [SerializeField] bool inDarkWorld;
+    [Header("Outputs")]
+    [SerializeField] LightToDark changeWorld;
 
-    private void Awake()
-    {
-        DarkWorld.SetActive(true);
-        LightWorld.SetActive(false);
-    }
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.CompareTag("Player"))
-        {
-            SwitchWorld();
-        }
-    }
-
-    private void SwitchWorld()
-    {
-        if (inDarkWorld)
-        {
-            DarkWorld.SetActive(false);
-            LightWorld.SetActive(true);
-        }
-        else
-        {
-            DarkWorld.SetActive(true);
-            LightWorld.SetActive(false);
-        }
-
-        inDarkWorld = !inDarkWorld;
+        changeWorld.SwitchWorld();
     }
 }
